@@ -1,3 +1,4 @@
 *.el
+*.png
 dev/
 test/
