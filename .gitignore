@@ -1,4 +1,4 @@
 *.el
-*.png
-dev/
-test/
+el/
+
+node_modules/

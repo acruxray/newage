@@ -1,0 +1,13 @@
+{
+  "name": "newage",
+  "version": "0.0.1",
+  "description": "A minimalistic CSS framework in the style of material design",
+  "author": "Nazar Mozol",
+  "homepage": "https://acruxray.github.io/newage/",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-imagemin": "^2.0.1",
+    "grunt-contrib-uglify": "^3.1.0",
+    "grunt-sass": "^2.0.0"
+  }
+}
