@@ -1,0 +1,98 @@
+.navbar-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navbar-wrapper.navbar-fixed {
+    position: fixed;
+}
+
+.navbar {
+    background: #0277bd;
+    position: relative;
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
+    color: #fff;
+    display: flex;
+    height: 4rem;
+    line-height: 4rem;
+    box-sizing: border-box;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .img,
+.navbar .logo,
+.navbar .links a {
+    padding: 0 1rem;
+}
+
+.navbar .links {
+    position: absolute;
+    right: 0;
+    display: flex;
+}
+
+.navbar .links a {
+    height: inherit;
+    display: flex;
+}
+
+.navbar .links i {
+  line-height: inherit;
+  font-size: 1.5rem;
+}
+
+.navbar .links a:hover {
+    background: rgba(0,0,0,0.3);
+    color: rgba(255,255,255,0.95);
+}
+
+.navbar .logo {
+    line-height: inherit;
+}
+
+.navbar .logo .logo-title {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin: 0;
+}
+
+.navbar .img {
+    display: flex;
+}
+
+.navbar .img img {
+    height: 3rem;
+    margin: auto;
+}
+
+.navbar.small {
+    height: 3rem;
+    line-height: 3rem;
+}
+
+.navbar.small .img img {
+    height: 2.25rem;
+}
+
+.navbar.large {
+    height: 5rem;
+    line-height: 5rem;
+}
+
+.navbar.large .img img {
+    height: 3.75rem;
+}
+
+.black {
+    background: #212121;
+}
+
+.no-shadow {
+    box-shadow: 0 0 0 0;
+}
