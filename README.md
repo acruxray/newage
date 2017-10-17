@@ -1,3 +1,5 @@
-# NewAge v0.0.1
+# NewAge
 
-A minimalistic CSS framework in the style of material design
+A minimalistic CSS framework in the style of material design.
+
+v0.0.2
