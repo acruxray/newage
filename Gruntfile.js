@@ -3,9 +3,22 @@ module.exports = function(grunt) {
 
         pkg: grunt.file.readJSON('package.json'),
 
+        // sorting CSS properties in specific order
+        csscomb: {
+          main: {
+            files: {
+              'src/buttons/buttons.css': ['src/buttons/buttons.css'],
+              'src/cards/cards.css': ['src/cards/cards.css'],
+              'src/layout/layout.css': ['src/layout/layout.css'],
+              'src/navbar/navbar.css': ['src/navbar/navbar.css'],
+              'src/typography/typography.css': ['src/typography/typography.css'],
+            }
+          },
+        },
+
         concat: {
           main: {
-            src: 'src/**/*.css',  // All css files in src dir
+            src: 'src/**/*.css',  // All .css files in src dir
             dest: 'dist/css/newage.css'
           }
         },
@@ -57,11 +70,12 @@ module.exports = function(grunt) {
     	}
     });
 
+    grunt.loadNpmTasks('grunt-csscomb');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-banner');
 
-    grunt.registerTask('default', ['concat', 'cssmin', 'usebanner', 'copy']);
+    grunt.registerTask('default', ['csscomb', 'concat', 'cssmin', 'usebanner', 'copy']);
 };

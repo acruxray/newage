@@ -1,0 +1,143 @@
+@font-face
+{
+    font-family: 'Roboto';
+    font-weight: 100;
+    font-style: normal;
+
+    src: local('Roboto Thin'), local('Roboto-Thin'), url(https://fonts.gstatic.com/s/roboto/v18/2tsd397wLxj96qwHyNIkxPesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+}
+@font-face
+{
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-style: normal;
+
+    src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v18/Hgo13k-tfSpn0qi1SFdUfVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+}
+@font-face
+{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-style: normal;
+
+    src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/CWB0XYA8bzo0kSThX0UTuA.woff2) format('woff2');
+}
+@font-face
+{
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-style: normal;
+
+    src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v18/RxZJdnzeo3R5zSexge8UUVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+}
+@font-face
+{
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-style: normal;
+
+    src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v18/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+}
+
+html
+{
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    line-height: 1.5;
+
+    color: rgba(0, 0, 0, .87);
+}
+
+@media (min-width: 0)
+{
+    html
+    {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 992px)
+{
+    html
+    {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1200px)
+{
+    html
+    {
+        font-size: 17px;
+    }
+}
+
+body
+{
+    margin: 0;
+}
+
+a
+{
+    text-decoration: none;
+
+    color: #0277bd;
+}
+
+a:hover
+{
+    color: #0288d1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+h1
+{
+    font-size: 4.1rem;
+
+    margin: 2.05rem 0 1.64rem 0;
+}
+
+h2
+{
+    font-size: 3.48rem;
+
+    margin: 1.74rem 0 1.392rem 0;
+}
+
+h3
+{
+    font-size: 2.86rem;
+
+    margin: 1.43rem 0 1.144rem 0;
+}
+
+h4
+{
+    font-size: 2.24rem;
+
+    margin: 1.12rem 0 .896rem 0;
+}
+
+h5
+{
+    font-size: 1.62rem;
+
+    margin: .81rem 0 .648rem 0;
+}
+
+h6
+{
+    font-size: 1rem;
+
+    margin: .5rem 0 .4rem 0;
+}

@@ -1,98 +1,138 @@
-.navbar-wrapper {
+.navbar-wrapper
+{
     position: absolute;
     top: 0;
     left: 0;
+
     width: 100%;
 }
 
-.navbar-wrapper.navbar-fixed {
+.navbar-wrapper.navbar-fixed
+{
     position: fixed;
 }
 
-.navbar {
-    background: #0277bd;
-    position: relative;
-    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
-    color: #fff;
-    display: flex;
-    height: 4rem;
+.navbar
+{
     line-height: 4rem;
+
+    position: relative;
+
+    display: flex;
+
     box-sizing: border-box;
+    height: 4rem;
+
+    color: #fff;
+    background: #0277bd;
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.3);
 }
 
-.navbar a {
-    color: #fff;
+.navbar h1
+{
+    line-height: inherit;
+}
+
+.navbar a
+{
     text-decoration: none;
+
+    color: #fff;
+}
+
+.navbar a:hover
+{
+    color: #fff;
 }
 
 .navbar .img,
 .navbar .logo,
-.navbar .links a {
+.navbar .links a
+{
     padding: 0 1rem;
 }
 
-.navbar .links {
+.navbar .links
+{
     position: absolute;
     right: 0;
+
     display: flex;
 }
 
-.navbar .links a {
+.navbar .links a
+{
+    display: flex;
+
     height: inherit;
-    display: flex;
 }
 
-.navbar .links i {
-  line-height: inherit;
-  font-size: 1.5rem;
-}
-
-.navbar .links a:hover {
-    background: rgba(0,0,0,0.3);
-    color: rgba(255,255,255,0.95);
-}
-
-.navbar .logo {
+.navbar .links i
+{
+    font-size: 1.5rem;
     line-height: inherit;
 }
 
-.navbar .logo .logo-title {
+.navbar .links a:hover
+{
+    color: rgba(255,255,255,.95);
+    background: rgba(0,0,0,.3);
+}
+
+.navbar .logo
+{
+    line-height: inherit;
+}
+
+.navbar .logo .logo-title
+{
     font-size: 1.5rem;
     font-weight: normal;
+
     margin: 0;
 }
 
-.navbar .img {
+.navbar .img
+{
     display: flex;
 }
 
-.navbar .img img {
+.navbar .img img
+{
     height: 3rem;
     margin: auto;
 }
 
-.navbar.small {
-    height: 3rem;
+.navbar.small
+{
     line-height: 3rem;
+
+    height: 3rem;
 }
 
-.navbar.small .img img {
+.navbar.small .img img
+{
     height: 2.25rem;
 }
 
-.navbar.large {
-    height: 5rem;
+.navbar.large
+{
     line-height: 5rem;
+
+    height: 5rem;
 }
 
-.navbar.large .img img {
+.navbar.large .img img
+{
     height: 3.75rem;
 }
 
-.black {
+.black
+{
     background: #212121;
 }
 
-.no-shadow {
+.no-shadow
+{
     box-shadow: 0 0 0 0;
 }
