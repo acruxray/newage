@@ -28,7 +28,7 @@
     /*line-height: 0;*/
 }
 
-.btn-s
+.btn.btn-s
 {
     font-size: .75rem;
 
@@ -36,21 +36,21 @@
     /*line-height: 0.75rem;*/
 }
 
-.btn-m
+.btn.btn-m
 {
     font-size: 1rem;
 
     height: 3rem;
 }
 
-.btn-l
+.btn.btn-l
 {
     font-size: 1.25rem;
 
     height: 3.25rem;
 }
 
-.btn-e
+.btn.btn-e
 {
     font-size: 1.5rem;
 
@@ -78,7 +78,7 @@
 	align-items: center;*/
 }
 
-.btn-round-s
+.btn-round.btn-round-s
 {
     font-size: .75rem;
 
@@ -86,7 +86,7 @@
     height: 2.75rem;
 }
 
-.btn-round-m
+.btn-round.btn-round-m
 {
     font-size: 1rem;
 
@@ -94,7 +94,7 @@
     height: 3rem;
 }
 
-.btn-round-l
+.btn-round.btn-round-l
 {
     font-size: 1.25rem;
 
@@ -102,7 +102,7 @@
     height: 3.25rem;
 }
 
-.btn-round-e
+.btn-round.btn-round-e
 {
     font-size: 1.5rem;
 
