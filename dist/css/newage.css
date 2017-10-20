@@ -629,6 +629,37 @@
     box-shadow: 0 0 0 0;
 }
 
+.navbar form
+{
+    display: flex;
+
+    width: 100%;
+}
+
+.navbar-search
+{
+    font-size: 1rem;
+
+    width: 100%;
+
+    border: 0;
+    outline: 0;
+}
+
+.navbar form .icon
+{
+    padding: 0 1rem;
+
+    color: rgba(0,0,0,.7);
+    background: #fff;;
+}
+
+.navbar form .icon i
+{
+    font-size: 2rem;
+    line-height: inherit;
+}
+
 
 @font-face
 {
