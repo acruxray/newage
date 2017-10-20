@@ -26,29 +26,25 @@
 
 .btn.btn-s
 {
-    font-size: 0.75rem;
-
+    font-size: .75rem;
     line-height: 2.75rem;
 }
 
 .btn.btn-m
 {
     font-size: 1rem;
-
     line-height: 3rem;
 }
 
 .btn.btn-l
 {
     font-size: 1.25rem;
-
     line-height: 3.25rem;
 }
 
 .btn.btn-e
 {
     font-size: 1.5rem;
-
     line-height: 3.5rem;
 }
 
