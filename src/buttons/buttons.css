@@ -5,7 +5,8 @@
     /*vertical-align: middle;*/
 
     box-sizing: border-box;
-    padding: 1rem 1.6rem;
+    /*padding: 1rem 1.6rem;*/
+    padding: 0 1.6rem;
 
     text-decoration: none;
     text-transform: uppercase;
@@ -25,31 +26,30 @@
 
 .btn.btn-s
 {
-    font-size: .75rem;
+    font-size: 0.75rem;
 
-    height: 2.75rem;
-    /*line-height: 0.75rem;*/
+    line-height: 2.75rem;
 }
 
 .btn.btn-m
 {
     font-size: 1rem;
 
-    height: 3rem;
+    line-height: 3rem;
 }
 
 .btn.btn-l
 {
     font-size: 1.25rem;
 
-    height: 3.25rem;
+    line-height: 3.25rem;
 }
 
 .btn.btn-e
 {
     font-size: 1.5rem;
 
-    height: 3.5rem;
+    line-height: 3.5rem;
 }
 
 .btn-round
