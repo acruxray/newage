@@ -272,6 +272,7 @@
     }
 }
 
+/* container horizontal */
 .container
 {
     width: 70%;
@@ -304,5 +305,39 @@
     .container.large
     {
         width: 100%;
+    }
+}
+
+/* container vertical */
+.container-vertical
+{
+    margin: 5rem 0;
+}
+
+.container-vertical.small
+{
+    margin: 3rem 0;
+}
+
+.container-vertical.large
+{
+    margin: 8rem 0;
+}
+
+@media (max-width: 601px)
+{
+    .container-vertical
+    {
+        margin: 3rem 0;
+    }
+
+    .container-vertical.small
+    {
+        margin: 2rem 0;
+    }
+
+    .container-vertical.large
+    {
+        margin: 5rem 0;
     }
 }
