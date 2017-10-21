@@ -1,19 +1,24 @@
-.right {
+.right
+{
     text-align: right;
 }
 
-.left {
+.left
+{
     text-align: left;
 }
 
-.center {
+.center
+{
     text-align: center;
 }
 
-.nopadding {
+.nopadding
+{
     padding: 0;
 }
 
-.nomargin {
+.nomargin
+{
     margin: 0;
 }

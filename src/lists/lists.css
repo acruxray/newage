@@ -1,0 +1,52 @@
+.list
+{
+    padding: 0;
+
+    list-style: none;
+}
+
+.list li
+{
+    display: flex;
+
+    box-sizing: border-box;
+    min-height: 3rem;
+    padding: 1rem;
+
+    border-bottom: 1px solid #ddd;
+}
+
+.list .composite
+{
+    padding: 0;
+}
+
+.composite .img
+{
+    padding: 1rem;
+}
+
+.composite .text
+{
+    width: 100%;
+    padding: 1rem;
+}
+
+.composite .icon
+{
+    line-height: 1rem;
+
+    padding: 1rem;
+}
+
+.list img
+{
+    border-radius: 50%;
+}
+
+.list a
+{
+    text-decoration: none;
+
+    color: inherit;
+}

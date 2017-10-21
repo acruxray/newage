@@ -12,6 +12,8 @@ module.exports = function(grunt) {
               'src/layout/layout.css': ['src/layout/layout.css'],
               'src/navbar/navbar.css': ['src/navbar/navbar.css'],
               'src/typography/typography.css': ['src/typography/typography.css'],
+              'src/lists/lists.css': ['src/lists/lists.css'],
+              'src/helpers/helpers.css': ['src/helpers/helpers.css'],
             }
           },
         },
