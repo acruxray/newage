@@ -213,6 +213,38 @@ footer {
     margin: 0;
 }
 
+@media (max-width: 600px)
+{
+    .hide-s
+    {
+        display: none;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 992px)
+{
+    .hide-m
+    {
+        display: none;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1200px)
+{
+    .hide-l
+    {
+        display: none;
+    }
+}
+
+@media (min-width: 1201px)
+{
+    .hide-e
+    {
+        display: none;
+    }
+}
+
 .row
 {
     display: flex;
