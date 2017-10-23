@@ -245,6 +245,18 @@ footer {
     }
 }
 
+/* for images */
+.grayscale
+{
+    filter: grayscale(100%);
+}
+
+/* for divs, images */
+.round
+{
+    border-radius: 50%;
+}
+
 .row
 {
     display: flex;
