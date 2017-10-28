@@ -284,18 +284,18 @@
 {
     .container
     {
-        width: 100%;
+        width: calc( 100% - 2rem );
         margin: auto;
     }
 
     .container.small
     {
-        width: 100%;
+        width: calc( 100% - 2rem );
     }
 
     .container.large
     {
-        width: 100%;
+        width: calc( 100% - 2rem );
     }
 }
 

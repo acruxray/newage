@@ -6,27 +6,18 @@
 .btn
 {
     display: inline-block;
-    /*display: table-cell;*/
-    /*vertical-align: middle;*/
 
     box-sizing: border-box;
-    /*padding: 1rem 1.6rem;*/
     padding: 0 1.6rem;
 
+    cursor: pointer;
     text-decoration: none;
     text-transform: uppercase;
 
     color: #fff;
     border-radius: 3px;
-    /*line-height: calc(100% + 2rem);*/
-    /*padding: 0 1.6rem;*/
     background-color: #ffa000;
     box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.3);
-    /*display: flex;
-	justify-content: center;
-	align-items: center;*/
-
-    /*line-height: 0;*/
 }
 
 .btn.btn-s
@@ -55,12 +46,10 @@
 
 .btn-round
 {
-    /*text-transform: uppercase;*/
     display: inline-block;
 
     box-sizing: border-box;
     padding: 0;
-    /*vertical-align: middle;*/
 
     text-align: center;
     text-decoration: none;
@@ -69,9 +58,6 @@
     border-radius: 50%;
     background-color: #ffa000;
     box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.3);
-    /*display: flex;
-	justify-content: center;
-	align-items: center;*/
 }
 
 .btn-round.btn-round-s
@@ -109,10 +95,7 @@
 .btn-round i
 {
     font-size: calc(100% + .5rem);
-    /*vertical-align: sub;*/
-    /*display: inline;*/
     line-height: calc(100% + 1.5rem);
-    /*margin: auto;*/
 }
 
 .card
@@ -543,18 +526,18 @@ footer {
 {
     .container
     {
-        width: 100%;
+        width: calc( 100% - 2rem );
         margin: auto;
     }
 
     .container.small
     {
-        width: 100%;
+        width: calc( 100% - 2rem );
     }
 
     .container.large
     {
-        width: 100%;
+        width: calc( 100% - 2rem );
     }
 }
 
