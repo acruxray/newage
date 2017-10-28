@@ -8,7 +8,7 @@
 
 .col
 {
-    /**/
+    box-sizing: border-box;
 }
 
 .s1
