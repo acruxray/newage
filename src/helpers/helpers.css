@@ -66,3 +66,14 @@
 {
     border-radius: 50%;
 }
+
+/*typography*/
+.uppercase
+{
+    text-transform: uppercase;
+}
+
+.lowercase
+{
+    text-transform: lowercase;
+}
