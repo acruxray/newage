@@ -80,6 +80,8 @@
 .navbar .links.stretch a
 {
     width: 100%;
+
+    cursor: pointer;
 }
 
 .navbar .links i
@@ -140,11 +142,6 @@
 .navbar.large .img img
 {
     height: 3.75rem;
-}
-
-.black
-{
-    background: #212121;
 }
 
 .no-shadow

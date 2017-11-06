@@ -14,6 +14,7 @@ module.exports = function(grunt) {
               'src/typography/typography.css': ['src/typography/typography.css'],
               'src/lists/lists.css': ['src/lists/lists.css'],
               'src/helpers/helpers.css': ['src/helpers/helpers.css'],
+              'src/colors/colors.css': ['src/colors/colors.css'],
             }
           },
         },
