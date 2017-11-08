@@ -1,5 +1,5 @@
 /*
- * Newage v0.2.0 (https://acruxray.github.io/newage)
+ * Newage v0.2.1 (https://acruxray.github.io/newage)
  * Copyright 2017 Newage
  * MIT License (https://raw.githubusercontent.com/acruxray/newage/master/LICENSE)
  */
@@ -2758,12 +2758,12 @@ footer {
 
 .nopadding
 {
-    padding: 0;
+    padding: 0 !important;
 }
 
 .nomargin
 {
-    margin: 0;
+    margin: 0 !important;
 }
 
 @media (max-width: 600px)
@@ -2832,6 +2832,13 @@ footer {
 .col
 {
     box-sizing: border-box;
+}
+
+.col img,
+.col video,
+.col iframe
+{
+    max-width: 100%;
 }
 
 .s1
@@ -3091,6 +3098,13 @@ footer {
 {
     width: 70%;
     margin: auto;
+}
+
+.container img,
+.container video,
+.container iframe
+{
+    max-width: 100%;
 }
 
 .container.small

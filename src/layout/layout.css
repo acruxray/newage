@@ -11,6 +11,13 @@
     box-sizing: border-box;
 }
 
+.col img,
+.col video,
+.col iframe
+{
+    max-width: 100%;
+}
+
 .s1
 {
     width: calc(100% / 12);
@@ -268,6 +275,13 @@
 {
     width: 70%;
     margin: auto;
+}
+
+.container img,
+.container video,
+.container iframe
+{
+    max-width: 100%;
 }
 
 .container.small
