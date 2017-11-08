@@ -16,6 +16,7 @@
 .col iframe
 {
     max-width: 100%;
+    height: auto;
 }
 
 .s1
@@ -282,6 +283,7 @@
 .container iframe
 {
     max-width: 100%;
+    height: auto;
 }
 
 .container.small
