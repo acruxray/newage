@@ -1,5 +1,5 @@
 /*
- * Newage v0.2.1 (https://acruxray.github.io/newage)
+ * Newage v0.3.0 (https://acruxray.github.io/newage)
  * Copyright 2017 Newage
  * MIT License (https://raw.githubusercontent.com/acruxray/newage/master/LICENSE)
  */
@@ -20,25 +20,30 @@
     box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.3);
 }
 
-.btn.btn-s
+.btn:hover
+{
+    color: #fff;
+}
+
+.btn.small
 {
     font-size: .75rem;
     line-height: 2.75rem;
 }
 
-.btn.btn-m
+.btn.medium
 {
     font-size: 1rem;
     line-height: 3rem;
 }
 
-.btn.btn-l
+.btn.large
 {
     font-size: 1.25rem;
     line-height: 3.25rem;
 }
 
-.btn.btn-e
+.btn.extra
 {
     font-size: 1.5rem;
     line-height: 3.5rem;
@@ -60,7 +65,7 @@
     box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.3);
 }
 
-.btn-round.btn-round-s
+.btn-round.small
 {
     font-size: .75rem;
 
@@ -68,7 +73,7 @@
     height: 2.75rem;
 }
 
-.btn-round.btn-round-m
+.btn-round.medium
 {
     font-size: 1rem;
 
@@ -76,7 +81,7 @@
     height: 3rem;
 }
 
-.btn-round.btn-round-l
+.btn-round.large
 {
     font-size: 1.25rem;
 
@@ -84,7 +89,7 @@
     height: 3.25rem;
 }
 
-.btn-round.btn-round-e
+.btn-round.extra
 {
     font-size: 1.5rem;
 
@@ -137,22 +142,22 @@
     border-top: 1px solid #eee;
 }
 
-.card-s
+.card.small
 {
     width: 14rem;
 }
 
-.card-m
+.card.medium
 {
     width: 23rem;
 }
 
-.card-l
+.card.large
 {
     width: 37rem;
 }
 
-.card-e
+.card.extra
 {
     width: 60rem;
 }
@@ -2821,6 +2826,32 @@ footer {
     text-transform: lowercase;
 }
 
+/* For default font (Roboto) only */
+.thin
+{
+    font-weight: 100;
+}
+
+.light
+{
+    font-weight: 300;
+}
+
+.normal
+{
+    font-weight: 400;
+}
+
+.bold
+{
+    font-weight: 500;
+}
+
+.bolder
+{
+    font-weight: 700;
+}
+
 .row
 {
     display: flex;
@@ -3369,6 +3400,11 @@ footer {
 .navbar.large .img img
 {
     height: 3.75rem;
+}
+
+.shadow
+{
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.3);
 }
 
 .no-shadow

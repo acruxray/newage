@@ -15,25 +15,30 @@
     box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.3);
 }
 
-.btn.btn-s
+.btn:hover
+{
+    color: #fff;
+}
+
+.btn.small
 {
     font-size: .75rem;
     line-height: 2.75rem;
 }
 
-.btn.btn-m
+.btn.medium
 {
     font-size: 1rem;
     line-height: 3rem;
 }
 
-.btn.btn-l
+.btn.large
 {
     font-size: 1.25rem;
     line-height: 3.25rem;
 }
 
-.btn.btn-e
+.btn.extra
 {
     font-size: 1.5rem;
     line-height: 3.5rem;
@@ -55,7 +60,7 @@
     box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.3);
 }
 
-.btn-round.btn-round-s
+.btn-round.small
 {
     font-size: .75rem;
 
@@ -63,7 +68,7 @@
     height: 2.75rem;
 }
 
-.btn-round.btn-round-m
+.btn-round.medium
 {
     font-size: 1rem;
 
@@ -71,7 +76,7 @@
     height: 3rem;
 }
 
-.btn-round.btn-round-l
+.btn-round.large
 {
     font-size: 1.25rem;
 
@@ -79,7 +84,7 @@
     height: 3.25rem;
 }
 
-.btn-round.btn-round-e
+.btn-round.extra
 {
     font-size: 1.5rem;
 
