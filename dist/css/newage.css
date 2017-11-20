@@ -1,5 +1,5 @@
 /*
- * Newage v0.3.2 (https://acruxray.github.io/newage)
+ * Newage v0.3.3 (https://acruxray.github.io/newage)
  * Copyright 2017 Newage
  * MIT License (https://raw.githubusercontent.com/acruxray/newage/master/LICENSE)
  */
@@ -11,7 +11,6 @@
     padding: 0 1.6rem;
 
     cursor: pointer;
-    text-align: center;
     text-decoration: none;
     text-transform: uppercase;
 
@@ -19,6 +18,8 @@
     border-radius: 3px;
     background-color: #ffa000;
     box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.3);
+
+    justify-content: center;
 }
 
 .btn:hover
@@ -2858,6 +2859,11 @@ footer {
 .bolder
 {
     font-weight: 700;
+}
+
+.wide
+{
+    width: 100%;
 }
 
 .row
