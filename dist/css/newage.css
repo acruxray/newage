@@ -1,5 +1,5 @@
 /*
- * Newage v0.3.1 (https://acruxray.github.io/newage)
+ * Newage v0.3.2 (https://acruxray.github.io/newage)
  * Copyright 2017 Newage
  * MIT License (https://raw.githubusercontent.com/acruxray/newage/master/LICENSE)
  */
@@ -11,6 +11,7 @@
     padding: 0 1.6rem;
 
     cursor: pointer;
+    text-align: center;
     text-decoration: none;
     text-transform: uppercase;
 
