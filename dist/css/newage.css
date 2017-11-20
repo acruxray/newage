@@ -1,11 +1,11 @@
 /*
- * Newage v0.3.0 (https://acruxray.github.io/newage)
+ * Newage v0.3.1 (https://acruxray.github.io/newage)
  * Copyright 2017 Newage
  * MIT License (https://raw.githubusercontent.com/acruxray/newage/master/LICENSE)
  */
 .btn
 {
-    display: inline-block;
+    display: inline-flex;
 
     box-sizing: border-box;
     padding: 0 1.6rem;
@@ -47,6 +47,13 @@
 {
     font-size: 1.5rem;
     line-height: 3.5rem;
+}
+
+.btn i
+{
+    font-size: calc(100% + .5rem);
+
+    margin: auto 0;
 }
 
 .btn-round

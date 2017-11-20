@@ -1,6 +1,6 @@
 .btn
 {
-    display: inline-block;
+    display: inline-flex;
 
     box-sizing: border-box;
     padding: 0 1.6rem;
@@ -42,6 +42,13 @@
 {
     font-size: 1.5rem;
     line-height: 3.5rem;
+}
+
+.btn i
+{
+    font-size: calc(100% + .5rem);
+
+    margin: auto 0;
 }
 
 .btn-round
