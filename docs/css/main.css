@@ -23,3 +23,9 @@ code {
     border: 1px solid #fff;
     background: #0277bd;
 }
+
+.app-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
