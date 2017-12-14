@@ -47,7 +47,8 @@
 
 .navbar .img,
 .navbar .logo,
-.navbar .links a
+.navbar .links a,
+.navbar .sidebar-btn a
 {
     padding: 0 1rem;
 }
@@ -60,7 +61,8 @@
     display: flex;
 }
 
-.navbar .links a
+.navbar .links a,
+.navbar .sidebar-btn a
 {
     display: flex;
 
@@ -84,13 +86,15 @@
     cursor: pointer;
 }
 
-.navbar .links i
+.navbar .links i,
+.navbar .sidebar-btn i
 {
     font-size: 1.5rem;
     line-height: inherit;
 }
 
-.navbar .links a:hover
+.navbar .links a:hover,
+.navbar .sidebar-btn a:hover
 {
     color: rgba(255,255,255,.95);
     background: rgba(0,0,0,.3);

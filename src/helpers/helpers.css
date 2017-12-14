@@ -27,7 +27,7 @@
 {
     .hide-s
     {
-        display: none;
+        display: none !important;
     }
 }
 
@@ -35,7 +35,7 @@
 {
     .hide-m
     {
-        display: none;
+        display: none !important;
     }
 }
 
@@ -43,7 +43,7 @@
 {
     .hide-l
     {
-        display: none;
+        display: none !important;
     }
 }
 
@@ -51,7 +51,7 @@
 {
     .hide-e
     {
-        display: none;
+        display: none !important;
     }
 }
 

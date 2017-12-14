@@ -15,6 +15,7 @@ module.exports = function(grunt) {
               'src/lists/lists.css': ['src/lists/lists.css'],
               'src/helpers/helpers.css': ['src/helpers/helpers.css'],
               'src/colors/colors.css': ['src/colors/colors.css'],
+              'src/sidebar/sidebar.css': ['src/sidebar/sidebar.css'],
             }
           },
         },
@@ -33,6 +34,16 @@ module.exports = function(grunt) {
           }
         },
 
+        uglify: {
+            my_target: {
+                files: {
+                    'dist/js/newage.min.js': [
+                        'src/sidebar/sidebar.js'
+                    ]
+                }
+            }
+        },
+
         // version headers for files
         usebanner: {
             taskName: {
@@ -48,7 +59,9 @@ module.exports = function(grunt) {
                 files: {
                     src: [
                         'dist/css/newage.css',
-                        'dist/css/newage.min.css'
+                        'dist/css/newage.min.css',
+                        'dist/js/newage.js',
+                        'dist/js/newage.min.js'
                     ]
                 }
             }
@@ -56,8 +69,10 @@ module.exports = function(grunt) {
 
         copy: {
           main: {
-            src: 'dist/css/newage.min.css',
-            dest: 'docs/css/newage.min.css'
+            files: [
+                {src: ['dist/css/newage.min.css'], dest: 'docs/css/newage.min.css'},
+                {src: ['dist/js/newage.min.js'], dest: 'docs/js/newage.min.js'},
+            ],
           }
         },
 
@@ -76,9 +91,10 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-csscomb');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-banner');
 
-    grunt.registerTask('default', ['csscomb', 'concat', 'cssmin', 'usebanner', 'copy']);
+    grunt.registerTask('default', ['csscomb', 'concat', 'cssmin', 'uglify', 'usebanner', 'copy']);
 };

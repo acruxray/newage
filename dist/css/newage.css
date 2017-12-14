@@ -1,5 +1,5 @@
 /*
- * Newage v0.3.3 (https://acruxray.github.io/newage)
+ * Newage v0.4.1 (https://acruxray.github.io/newage)
  * Copyright 2017 Newage
  * MIT License (https://raw.githubusercontent.com/acruxray/newage/master/LICENSE)
  */
@@ -2784,7 +2784,7 @@ footer {
 {
     .hide-s
     {
-        display: none;
+        display: none !important;
     }
 }
 
@@ -2792,7 +2792,7 @@ footer {
 {
     .hide-m
     {
-        display: none;
+        display: none !important;
     }
 }
 
@@ -2800,7 +2800,7 @@ footer {
 {
     .hide-l
     {
-        display: none;
+        display: none !important;
     }
 }
 
@@ -2808,7 +2808,7 @@ footer {
 {
     .hide-e
     {
-        display: none;
+        display: none !important;
     }
 }
 
@@ -3319,7 +3319,8 @@ footer {
 
 .navbar .img,
 .navbar .logo,
-.navbar .links a
+.navbar .links a,
+.navbar .sidebar-btn a
 {
     padding: 0 1rem;
 }
@@ -3332,7 +3333,8 @@ footer {
     display: flex;
 }
 
-.navbar .links a
+.navbar .links a,
+.navbar .sidebar-btn a
 {
     display: flex;
 
@@ -3356,13 +3358,15 @@ footer {
     cursor: pointer;
 }
 
-.navbar .links i
+.navbar .links i,
+.navbar .sidebar-btn i
 {
     font-size: 1.5rem;
     line-height: inherit;
 }
 
-.navbar .links a:hover
+.navbar .links a:hover,
+.navbar .sidebar-btn a:hover
 {
     color: rgba(255,255,255,.95);
     background: rgba(0,0,0,.3);
@@ -3455,6 +3459,107 @@ footer {
 {
     font-size: 2rem;
     line-height: inherit;
+}
+
+.sidebar
+{
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+
+    overflow-y: auto;
+
+    height: 100%;
+
+    color: #000;
+    background: #fff;
+}
+
+
+.sidebar-btn
+{
+    background: inherit;
+}
+
+
+@media (max-width: 600px)
+{
+    .sidebar
+    {
+        left: -16rem;
+
+        transition: left .5s;
+    }
+}
+
+@media (min-width: 601px)
+{
+    .sidebar-btn
+    {
+        display: none;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 992px)
+{
+    header,
+    main,
+    footer,
+    .navbar
+    {
+        padding-left: 10rem;
+    }
+
+    .sidebar
+    {
+        width: 10rem;
+    }
+}
+
+@media (min-width: 993px)
+{
+    header,
+    main,
+    footer,
+    .navbar
+    {
+        padding-left: 16rem;
+    }
+
+    .sidebar
+    {
+        width: 16rem;
+    }
+}
+
+
+
+.sidebar.active
+{
+    left: 0;
+
+    width: 16rem;
+}
+
+.content-locker
+{
+    display: none;
+}
+
+.content-locker.active
+{
+    position: fixed;
+    z-index: 90;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0,.6);
 }
 
 
