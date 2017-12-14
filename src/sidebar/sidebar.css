@@ -40,10 +40,7 @@
 
 @media (min-width: 601px) and (max-width: 992px)
 {
-    header,
-    main,
-    footer,
-    .navbar
+    .sidebar-push
     {
         padding-left: 10rem;
     }
@@ -56,10 +53,7 @@
 
 @media (min-width: 993px)
 {
-    header,
-    main,
-    footer,
-    .navbar
+    .sidebar-push
     {
         padding-left: 16rem;
     }

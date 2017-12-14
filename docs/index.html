@@ -8,123 +8,75 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="./css/newage.min.css">
 	<link rel="stylesheet" href="./css/main.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
 </head>
 <body>
+
+<span id="app">
+    <nav id="sidebar" class="sidebar">
+        <h5>Header</h5>
+    	<ul class="list">
+    		<li><a href="#/layout" @click="show('layout')">Layout</a></li>
+    	    <li><a href="#/helpers" @click="show('helpers')">Helpers</a></li>
+        	<li><a href="#/colors" @click="show('colors')">Colors</a></li>
+        	<li><a href="#/lists" @click="show('lists')">Lists</a></li>
+        	<li><a href="#/navbar" @click="show('navbar')">Navbar</a></li>
+        	<li><a href="#/sidebar" @click="show('sidebar')">Sidebar</a></li>
+        	<li><a href="#/tables" @click="show('tables')">Tables</a></li>
+        	<li><a href="#/typography" @click="show('typography')">Typography</a></li>
+        </ul>
+        <p>2017 &copy; NewAge</p>
+    </nav>
+
+	<div id="contentLocker" class="content-locker"></div>
+
 	<header>
-			<nav class="navbar-wrapper">
-					<div class="navbar grey darken-4">
-						<a href="https://acruxray.github.io/newage/" class="img">
-							<img src="./img/newage_logo_256x256.png" alt="NewAge css framework">
-						</a>
+		<nav class="navbar-wrapper">
+			<div class="navbar black sidebar-push">
 
-						<a href="https://acruxray.github.io/newage/" class="logo">
-							<h1 class="logo-title">NewAge</h1>
-						</a>
+				<div id="sidebarBtn" class="sidebar-btn">
+					<a href="#">
+				    	<i class="material-icons">menu</i>
+				    </a>
+				</div>
 
-						<div class="links">
-							<a href="https://github.com/acruxray/newage"><i class="material-icons" style="margin-right: 0.5rem;">link</i>GitHub</a>
-						</div>
-					</div>
-				</nav>
+				<a href="https://acruxray.github.io/newage/" class="img">
+					<img src="img/newage_logo_256x256.png" alt="NewAge">
+				</a>
 
-		<div class="container-vertical large">
-			<div class="container">
-				<h1>NewAge css framework</h1>
-				<p>NewAge is a small css framework based on principles of <a href="https://material.io/guidelines/">material design</a>.</p>
-				<p>v0.3.3</p>
+				<a href="https://acruxray.github.io/newage/" class="logo">
+					<h1 class="logo-title">NewAge</h1>
+				</a>
+
+				<div class="links hide-s">
+					<a href="https://github.com/acruxray/newage"><i class="material-icons" style="margin-right: 0.5rem;">link</i>GitHub</a>
+				</div>
 			</div>
-		</div>
+		</nav>
 	</header>
 
-	<main class="container-vertical">
-		<div class=" container">
-
-
-			<ul id="slide-out" class="side-nav fixed">
-	<li><a class="subheader">Категории:</a></li>
-	<li><div class="divider"></div></li>
-	<li><a data-link="pg"><i class="material-icons">format_color_text</i>PG</a></li>
-	<li><a data-link="control"><i class="material-icons">dashboard</i>Control</a></li>
-	<li><a data-link="finance"><i class="material-icons">account_balance_wallet</i>Finance</a></li>
-	<li><a data-link="notepad"><i class="material-icons">note_add</i>Notepad</a></li>
-	<li><a data-link="gmm"><i class="material-icons">landscape</i>GMM</a></li>
-	<li><a data-link="backUp"><i class="material-icons">backup</i>Backup</a></li>
-	<!-- <li><a data-link="study"><i class="material-icons">language</i>Study</a></li> -->
-	<li><a data-link="speleo"><i class="material-icons">location_on</i>Speleo</a></li>
-	<li><a data-link="domains"><i class="material-icons">domain</i>Domains</a></li>
-	<li><a data-link="adsense"><i class="material-icons">info_outline</i>Adsense</a></li>
-	<li><a data-link="db"><i class="material-icons">settings</i>DB</a></li>
-	<li><a data-link="eyesight"><i class="material-icons">remove_red_eye</i>Eyesight</a></li>
-</ul>
-
-
-
-
-<div id="info_b" >
-		<div id="info">speleo</div>
-	</div>
-
-
-
-		</div>
+	<main class="container-vertical large sidebar-push">
+		<div class="container" v-html="message"></div>
 	</main>
 
-	<footer></footer>
+    <footer class="blue-grey grey-text text-lighten-3 sidebar-push">
+		<div class="container light" style="padding: 1rem 0;">
+            <h5>Footer text</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+	</footer>
+</span>
+
+
+
+
+
+	<script src="https://unpkg.com/vue"></script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/newage.min.js"></script>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
 	<script>hljs.initHighlightingOnLoad();</script>
-
-
-	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script> -->
-<script>
-
-$(document).ready(function() {
-	readUrl();
-});
-
-// $(".button-collapses").sideNav({
-// 	menuWidth: 256
-// });
-
-$('[data-link]').click(function(){
-	var name = $(this).data('link');
-
-	setUrl(name);
-
-});
-
-
-
-function setUrl(url){
-
-	history.pushState(null,null,'#/'+url);
-
-	readUrl();
-}
-
-function readUrl(){
-
-	if(window.location.hash==''){
-		$("[data-link]").parent().removeClass('active');
-		$('[data-link=control]').parent().addClass('active');
-		$('#info').load('base/buttons.html');
-		$('#main').css('display','none');
-		$('#info_b').css('display','block');
-	}else{
-		var name = window.location.hash;
-		name=name.replace('#/','');
-		$("[data-link]").parent().removeClass('active');
-		$('[data-link='+name+']').parent().addClass('active');
-		$('#info').load('base/'+name+'.html');
-		$('#main').css('display','none');
-		$('#info_b').css('display','block');
-
-	}
-}
-
-</script>
 
 </body>
 </html>

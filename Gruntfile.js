@@ -16,6 +16,7 @@ module.exports = function(grunt) {
               'src/helpers/helpers.css': ['src/helpers/helpers.css'],
               'src/colors/colors.css': ['src/colors/colors.css'],
               'src/sidebar/sidebar.css': ['src/sidebar/sidebar.css'],
+              'src/footer/footer.css': ['src/footer/footer.css'],
             }
           },
         },
