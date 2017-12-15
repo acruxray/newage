@@ -4,10 +4,11 @@
 	<meta charset="utf-8">
 	<title>NewAge css framework</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<link rel="shortcut icon" href="./img/newage_logo_256x256.png">
+	<link rel="shortcut icon" href="img/newage_logo_256x256.png">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" href="./css/newage.min.css">
-	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="css/newage.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/prism.css">
 </head>
 <body>
 
@@ -55,7 +56,7 @@
 	</header>
 
 	<main class="container-vertical large sidebar-push">
-		<div class="container" v-html="message"></div>
+		<div class="container large" v-html="message"></div>
 	</main>
 
     <footer class="blue-grey grey-text text-lighten-3 sidebar-push">
@@ -68,11 +69,10 @@
 
 	<script src="https://unpkg.com/vue"></script>
 	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
 	<script src="js/main.js"></script>
 	<script src="js/newage.min.js"></script>
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-	<script>hljs.initHighlightingOnLoad();</script>
+	<script src="js/prism.js"></script>
 
 </body>
 </html>

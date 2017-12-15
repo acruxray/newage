@@ -2,14 +2,6 @@ body {
     background: #f0f0f0;
 }
 
-code {
-    background: #fff !important;
-    border-radius: 3px;
-    border: 1px solid #cfd8dc;
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
-}
-
 .col
 {
     line-height: 3rem;

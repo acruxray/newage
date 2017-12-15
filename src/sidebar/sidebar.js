@@ -15,6 +15,12 @@
         }
     };
 
+    sidebar.onclick = function(e) {
+        if (e.target.tagName === 'A' && sidebar.className.indexOf(a) >= 0) {
+            toggle(e);
+        }
+    };
+
     function toggle(e) {
         e.preventDefault();
         toggleClass(contentLocker);

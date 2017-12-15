@@ -11,14 +11,16 @@ var app = new Vue({
 
 		g(a, function(r) {
 			app.message = r;
-		})
+            hL();
+		});
 	}
   },
   methods: {
 	show: function(a) {
 		g(a, function(r) {
 			app.message = r;
-		})
+            hL();
+		});
 	}
   }
 
@@ -35,4 +37,8 @@ function g(a, cb) {
 		}).catch(function (error) {
 			cb('404 Not Found');
 		});
+}
+
+function hL() {
+    setTimeout(function() { Prism.highlightAll() }, 300);
 }

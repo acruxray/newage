@@ -1,5 +1,5 @@
 /*
- * Newage v0.4.2 (https://acruxray.github.io/newage)
+ * Newage v0.4.3 (https://acruxray.github.io/newage)
  * Copyright 2017 Newage
  * MIT License (https://raw.githubusercontent.com/acruxray/newage/master/LICENSE)
  */
@@ -3472,20 +3472,66 @@ footer
     top: 0;
     left: 0;
 
+    display: flex;
     overflow-y: auto;
+    flex-direction: column;
 
-    height: 100%;
+    min-height: 100vh;
 
     color: #000;
     background: #fff;
 }
 
+.sidebar-main
+{
+    flex: 1 0 auto;
+}
+
+.sidebar-main i
+{
+    margin-right: 1.3rem;
+}
+
+.sidebar-list
+{
+    padding: 0;
+
+    list-style: none;
+}
+
+.sidebar-list a
+{
+    display: flex;
+
+    box-sizing: border-box;
+    min-height: 2rem;
+    padding: .5rem 1.3rem;
+
+    color: inherit;
+}
+
+.sidebar-list a i
+{
+    color: rgba(0,0,0,.5);
+}
+
+.sidebar-list a:hover
+{
+    background: rgba(0,0,0,.05);
+}
+
+.sidebar-footer
+{
+    font-size: .85rem;
+
+    box-sizing: border-box;
+    padding: 1.3rem;
+}
 
 .sidebar-btn
 {
     background: inherit;
 }
-
 
 @media (max-width: 600px)
 {
