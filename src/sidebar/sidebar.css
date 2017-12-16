@@ -32,13 +32,19 @@
     list-style: none;
 }
 
+.sidebar-list i {
+    font-size: 1.275rem; /* test */
+}
+
 .sidebar-list a
 {
     display: flex;
 
     box-sizing: border-box;
-    min-height: 2rem;
-    padding: .5rem 1.3rem;
+    min-height: 2.75rem; /* test (2rem) */
+    padding: .882rem 1.3rem; /* test (.5rem 1.3rem) */
+    font-weight: 500; /* test (normal)*/
+    font-size: 0.85rem; /* test (1rem) */
 
     color: inherit;
 }
