@@ -21,3 +21,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
+
+.latest-commit {
+    font-size: 0.85rem;
+}

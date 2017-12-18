@@ -14,25 +14,35 @@
 
 <span id="app" class="app-wrapper">
     <nav id="sidebar" class="sidebar">
-        <h5>Header</h5>
-    	<ul class="list">
+		<div class="navbar grey lighten-3 no-shadow large">
+			<a href="https://acruxray.github.io/newage/" class="img">
+				<img src="img/newage_logo_256x256.png" alt="NewAge">
+			</a>
+
+			<a href="#" class="logo grey-text text-darken-4">
+				<h1 class="logo-title">NewAge</h1>
+			</a>
+		</div>
+    	<ul class="sidebar-list sidebar-main grey-text text-darken-4">
+			<li><a href="#/typography" @click="show('typography')">Typography</a></li>
     		<li><a href="#/layout" @click="show('layout')">Layout</a></li>
-    	    <li><a href="#/helpers" @click="show('helpers')">Helpers</a></li>
+    	    <!-- <li><a href="#/helpers" @click="show('helpers')">Helpers</a></li>
         	<li><a href="#/colors" @click="show('colors')">Colors</a></li>
         	<li><a href="#/lists" @click="show('lists')">Lists</a></li>
         	<li><a href="#/navbar" @click="show('navbar')">Navbar</a></li>
         	<li><a href="#/sidebar" @click="show('sidebar')">Sidebar</a></li>
-        	<li><a href="#/tables" @click="show('tables')">Tables</a></li>
-        	<li><a href="#/typography" @click="show('typography')">Typography</a></li>
+        	<li><a href="#/tables" @click="show('tables')">Tables</a></li> -->
         </ul>
-        <p>2017 &copy; NewAge</p>
+		<div class="sidebar-footer">
+			2017 &copy; NewAge
+		</div>
     </nav>
 
 	<div id="contentLocker" class="content-locker"></div>
 
 	<header>
 		<nav class="navbar-wrapper">
-			<div class="navbar black sidebar-push">
+			<div class="navbar small blue-grey sidebar-push">
 
 				<div id="sidebarBtn" class="sidebar-btn">
 					<a href="#">
@@ -40,27 +50,22 @@
 				    </a>
 				</div>
 
-				<a href="https://acruxray.github.io/newage/" class="img">
-					<img src="img/newage_logo_256x256.png" alt="NewAge">
-				</a>
-
-				<a href="https://acruxray.github.io/newage/" class="logo">
-					<h1 class="logo-title">NewAge</h1>
-				</a>
-
 				<div class="links hide-s">
+					<a class="disabled latest-commit">Latest commit:</a>
+					<a class="latest-commit" target="_blank" :href="latestCommitUrl" v-html="latestCommitHash"></a>
+					<a class="disabled latest-commit" v-html="latestCommitDate"></a>
 					<a href="https://github.com/acruxray/newage"><i class="material-icons" style="margin-right: 0.5rem;">link</i>GitHub</a>
 				</div>
 			</div>
 		</nav>
 	</header>
 
-	<main class="container-vertical large sidebar-push">
+	<main class="container-vertical sidebar-push">
 		<div class="container large" v-html="message"></div>
 	</main>
 
     <footer class="blue-grey grey-text text-lighten-3 sidebar-push">
-		<div class="container light" style="padding: 1rem 0;">
+		<div class="container large light" style="padding: 1rem 0;">
             <h5>Footer text</h5>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
@@ -69,6 +74,7 @@
 
 	<script src="https://unpkg.com/vue"></script>
 	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script src="js/moment.min.js"></script>
 
 	<script src="js/main.js"></script>
 	<script src="js/newage.min.js"></script>

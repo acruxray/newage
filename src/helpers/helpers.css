@@ -109,8 +109,18 @@
     width: 100%;
 }
 
-.truncate {
-    white-space: nowrap;
+.truncate
+{
     overflow: hidden;
+
+    white-space: nowrap;
     text-overflow: ellipsis;
+}
+
+a.disabled
+{
+    cursor: default;
+    pointer-events: none;
+
+    color: #ccc;
 }

@@ -15,6 +15,11 @@
     background: #fff;
 }
 
+.sidebar-header
+{
+    padding: 0 1.3rem;
+}
+
 .sidebar-main
 {
     flex: 1 0 auto;
@@ -27,24 +32,27 @@
 
 .sidebar-list
 {
+    margin: 0;
     padding: 0;
 
     list-style: none;
 }
 
-.sidebar-list i {
+.sidebar-list i
+{
     font-size: 1.275rem; /* test */
 }
 
 .sidebar-list a
 {
+    font-size: .85rem; /* test (1rem) */
+    font-weight: 500; /* test (normal)*/
+
     display: flex;
 
     box-sizing: border-box;
     min-height: 2.75rem; /* test (2rem) */
     padding: .882rem 1.3rem; /* test (.5rem 1.3rem) */
-    font-weight: 500; /* test (normal)*/
-    font-size: 0.85rem; /* test (1rem) */
 
     color: inherit;
 }
@@ -64,7 +72,7 @@
     font-size: .85rem;
 
     box-sizing: border-box;
-    padding: 1.3rem;
+    padding: 1rem 1.3rem;
 }
 
 .sidebar-btn
