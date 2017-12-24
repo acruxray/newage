@@ -1,0 +1,46 @@
+table
+{
+    width: 100%;
+
+    border-spacing: 0;
+}
+
+th
+{
+    text-align: left;
+
+    border-bottom: 1px solid #ccc;
+}
+
+th,
+td
+{
+    padding: 1rem .5rem;
+}
+
+table.no-thead-border th
+{
+    border-bottom: 0;
+}
+
+table.bordered tbody td
+{
+    border-bottom: 1px solid #ccc;
+}
+
+table.striped tbody tr:nth-child(odd)
+{
+    background: #f2f2f2;
+}
+
+table.highlight tbody tr:hover
+{
+    transition: background-color .25s ease;
+
+    background: #f2f2f2;
+}
+
+table.center thead th
+{
+    text-align: center;
+}

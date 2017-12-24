@@ -17,6 +17,7 @@ module.exports = function(grunt) {
               'src/colors/colors.css': ['src/colors/colors.css'],
               'src/sidebar/sidebar.css': ['src/sidebar/sidebar.css'],
               'src/footer/footer.css': ['src/footer/footer.css'],
+              'src/tables/tables.css': ['src/tables/tables.css'],
             }
           },
         },
