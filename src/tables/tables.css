@@ -1,8 +1,13 @@
 table
 {
+    display: block;
+    overflow-x: auto;
+
     width: 100%;
 
     border-spacing: 0;
+
+    white-space: nowrap;
 }
 
 th
