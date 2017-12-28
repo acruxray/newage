@@ -1,5 +1,5 @@
 /*
- * Newage v0.5.1 (https://acruxray.github.io/newage)
+ * Newage v0.5.2 (https://acruxray.github.io/newage)
  * Copyright 2017 Newage
  * MIT License (https://raw.githubusercontent.com/acruxray/newage/master/LICENSE)
  */
@@ -3608,6 +3608,13 @@ a.disabled
     }
 }
 
+
+.sidebar-hidden
+{
+    left: -16rem;
+
+    transition: left .5s;
+}
 
 
 .sidebar.active
