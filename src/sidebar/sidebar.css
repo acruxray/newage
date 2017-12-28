@@ -126,6 +126,13 @@
 }
 
 
+.sidebar-hidden
+{
+    left: -16rem;
+
+    transition: left .5s;
+}
+
 
 .sidebar.active
 {
