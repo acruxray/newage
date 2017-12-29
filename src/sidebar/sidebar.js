@@ -3,7 +3,8 @@
     var sidebar       = document.getElementById('sidebar'),
         sidebarBtn    = document.getElementById('sidebarBtn'),
         contentLocker = document.getElementById('contentLocker'),
-        a = 'active';
+        sublist       = 'sidebar-sublist',
+        a             = 'active';
 
     sidebarBtn.onclick = function (e) {
         toggle(e);
@@ -16,8 +17,16 @@
     };
 
     sidebar.onclick = function(e) {
-        if (e.target.tagName === 'A' && sidebar.className.indexOf(a) >= 0) {
-            toggle(e);
+        // collapse/expand sublist by click to parent item
+        if (e.target.tagName === 'A' &&
+            e.target.parentNode.children.length > 1 &&
+            e.target.parentNode.children[1].className.indexOf(sublist) >= 0) {
+            toggleClass(e.target.parentNode.children[1]);
+        } else {
+            // close sidebar by click to any within tag [A]
+            if (e.target.tagName === 'A' && sidebar.className.indexOf(a) >= 0) {
+                toggle(e);
+            }
         }
     };
 

@@ -14,6 +14,19 @@
 		<link href="sidebar.css" rel="stylesheet">
 	  	<style>
 
+		.sidebar-sublist
+		{
+			display: block;
+		    transition: max-height 0.5s ease;
+		    overflow:hidden;
+		    max-height: 0;
+		}
+
+		.sidebar-sublist.active
+		{
+		    max-height: 20rem;
+		}
+
 		</style>
 	</head>
 	<body class="grey lighten-3">
@@ -38,14 +51,34 @@
 			</li>
 			<li>
 				<a href="#"><i class="material-icons">account_balance</i>Tables</a>
+				<ul class="sidebar-list sidebar-sublist">
+					<li><a href="#"><i class="material-icons">view_stream</i>Simple Tables</a></li>
+					<li><a href="#"><i class="material-icons">dashboard</i>Stripped Tables</a></li>
+					<li><a href="#">Highlight Tables</a></li>
+				</ul>
 			</li>
 			<li>
 				<a href="#"><i class="material-icons">security</i>Helpers</a>
 			</li>
-    	    <li><a href="#">Helpers</a></li>
+    	    <li>
+				<a href="#">Helpers</a>
+				<ul class="sidebar-list sidebar-sublist">
+					<li><a href="#">Typography Helpers</a></li>
+					<li><a href="#">Layout Helpers</a></li>
+					<li><a href="#">Block Helpers</a></li>
+				</ul>
+			</li>
         	<li><a href="#">Colors</a></li>
-        	<li><a href="#">Lists</a></li>
+        	<li>
+				<a href="#">Lists</a>
+				<ul class="sidebar-list sidebar-sublist">
+					<li><a href="#"><i class="material-icons">format_list_bulleted</i>Simple lists</a></li>
+					<li><a href="#"><i class="material-icons">view_list</i>Rich lists</a></li>
+					<li><a href="#"><i class="material-icons">format_list_numbered</i>Numbered lists</a></li>
+				</ul>
+			</li>
         	<li><a href="#">Buttons</a></li>
+        	<li><a href="#">Footer</a></li>
         </ul>
 		<div class="sidebar-footer">
 			2017 &copy; NewAge

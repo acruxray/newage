@@ -9,10 +9,15 @@
     overflow-y: auto;
     flex-direction: column;
 
-    min-height: 100vh;
+    height: 100%;
 
     color: #000;
     background: #fff;
+}
+
+.sidebar .navbar-wrapper
+{
+    position: relative;
 }
 
 .sidebar-header
@@ -64,9 +69,29 @@
 
 .sidebar-list a:hover
 {
+    transition: background .25s ease;
+
     color: inherit;
     background: rgba(0,0,0,.05);
 }
+
+.sidebar-sublist
+{
+    display: none;
+}
+
+.sidebar-sublist.active
+{
+    display: block;
+}
+
+.sidebar-sublist a
+{
+    font-weight: 400;
+
+    padding-left: 2.6rem;
+}
+
 
 .sidebar-footer
 {
