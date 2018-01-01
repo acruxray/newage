@@ -1,8 +1,8 @@
-function sideBar(o) {
+(function (window, document) {
 
-    var sidebar       = document.getElementById(o.sideBar),
-        sidebarBtn    = document.getElementById(o.collapseButton),
-        contentLocker = document.getElementById(o.contentLocker),
+    var sidebar       = document.getElementById('sidebar'),
+        sidebarBtn    = document.getElementById('sidebarBtn'),
+        contentLocker = document.getElementById('contentLocker'),
         sublist       = 'sidebar-sublist',
         a             = 'active';
 
@@ -45,4 +45,4 @@ function sideBar(o) {
         }
     }
 
-}
+}(this, this.document));
