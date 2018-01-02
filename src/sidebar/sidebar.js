@@ -21,6 +21,7 @@ function sideBar(o) {
         if (e.target.tagName === 'A' &&
             e.target.parentNode.children.length > 1 &&
             e.target.parentNode.children[1].className.indexOf(sublist) >= 0) {
+            e.preventDefault();
             toggleClass(e.target.parentNode.children[1]);
         } else {
             // close sidebar by click to any within tag [A]
