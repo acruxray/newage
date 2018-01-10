@@ -18,6 +18,7 @@ module.exports = function(grunt) {
               'src/sidebar/sidebar.css': ['src/sidebar/sidebar.css'],
               'src/footer/footer.css': ['src/footer/footer.css'],
               'src/tables/tables.css': ['src/tables/tables.css'],
+              'src/notifications/notifications.css': ['src/notifications/notifications.css'],
             }
           },
         },
@@ -40,7 +41,8 @@ module.exports = function(grunt) {
             my_target: {
                 files: {
                     'dist/js/newage.min.js': [
-                        'src/sidebar/sidebar.js'
+                        'src/sidebar/sidebar.js',
+                        'src/notifications/notifications.js'
                     ]
                 }
             }

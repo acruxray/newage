@@ -1,5 +1,5 @@
 /*
- * Newage v0.6.2 (https://acruxray.github.io/newage)
+ * Newage v0.7.0 (https://acruxray.github.io/newage)
  * Copyright 2018 Newage
  * MIT License (https://raw.githubusercontent.com/acruxray/newage/master/LICENSE)
  */
@@ -3479,6 +3479,32 @@ a.disabled
 {
     font-size: 2rem;
     line-height: inherit;
+}
+
+.notification
+{
+    font-size: 1rem;
+
+    position: fixed;
+    z-index: 10000;
+    right: -100%;
+    bottom: 3rem;
+
+    box-sizing: border-box;
+    max-width: 90%;
+    padding: 1rem 1.6rem;
+
+    transition: right .5s ease;
+    text-align: center;
+
+    color: #fff;
+    border-radius: 2px;
+    background: rgba(50,50,50,.85);
+}
+
+.notification.active
+{
+    right: 2rem;
 }
 
 .sidebar

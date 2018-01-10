@@ -1,0 +1,25 @@
+.notification
+{
+    font-size: 1rem;
+
+    position: fixed;
+    z-index: 10000;
+    right: -100%;
+    bottom: 3rem;
+
+    box-sizing: border-box;
+    max-width: 90%;
+    padding: 1rem 1.6rem;
+
+    transition: right .5s ease;
+    text-align: center;
+
+    color: #fff;
+    border-radius: 2px;
+    background: rgba(50,50,50,.85);
+}
+
+.notification.active
+{
+    right: 2rem;
+}
