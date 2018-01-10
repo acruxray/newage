@@ -27,7 +27,12 @@
 
     <main class="container-vertical large">
 		<div class="container">
-			<a href="#" class="btn large" onClick="notification('I am notification!')">Call notification</a>
+			<p>
+				<a href="#" class="btn large" onClick="notification('I am notification with default lifetime!')">Call notification</a>
+			</p>
+			<p>
+				<a href="#" class="btn large" onClick="notification('I am notification with 10 seconds lifetime!', 10000)">Call longtime notification</a>
+			</p>
 		</div>
 	</main>
 

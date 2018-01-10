@@ -1,6 +1,9 @@
-function notification(text) {
+function notification(text, lifetime) {
 
-    var e = document.createElement('div');
+    lifetime = typeof lifetime  === 'undefined' ? 3000 : lifetime;
+
+    var e = document.createElement('div'),
+        timeout = lifetime + 1000;
     e.className = 'notification';
     e.innerHTML = text;
 
@@ -11,7 +14,10 @@ function notification(text) {
 
     	setTimeout(function() {
 	    	e.classList.remove('active');
-	    }, 3000);
+            setTimeout(function() {
+                e.remove();
+            }, timeout);
+	    }, lifetime);
     });
 
 }
