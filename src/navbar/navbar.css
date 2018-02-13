@@ -170,9 +170,34 @@
     font-size: 1rem;
 
     width: 100%;
+    margin: 0;
 
     border: 0;
     outline: 0;
+    background-color: #fff;
+}
+
+.navbar.textarea
+{
+    height: auto;
+}
+
+textarea.navbar-search
+{
+    font-family: inherit;
+    font-size: 1rem;
+
+    padding: 1.5rem 0;
+}
+
+.navbar.small textarea.navbar-search
+{
+    padding: 1rem 0;
+}
+
+.navbar.large textarea.navbar-search
+{
+    padding: 2rem 0;
 }
 
 .navbar form .icon
