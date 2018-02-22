@@ -17,15 +17,26 @@ function sideBar(o) {
     };
 
     sidebar.onclick = function(e) {
+        // console.log(e.target.parentNode.nextElementSibling.className)
         // collapse/expand sublist by click to parent item
-        if (e.target.tagName === 'A' &&
+        if ( // if [a] contains another elements
+            e.target.parentNode.tagName === 'A' &&
+            e.target.parentNode.nextElementSibling &&
+            e.target.parentNode.nextElementSibling.className.indexOf(sublist) >= 0
+        ) {
+            e.preventDefault();
+            toggleClass(e.target.parentNode.nextElementSibling);
+        } else if ( // if only text-link
+            e.target.tagName === 'A' &&
             e.target.parentNode.children.length > 1 &&
-            e.target.parentNode.children[1].className.indexOf(sublist) >= 0) {
+            e.target.parentNode.children[1].className.indexOf(sublist) >= 0
+        ) {
             e.preventDefault();
             toggleClass(e.target.parentNode.children[1]);
         } else {
             // close sidebar by click to any within tag [A]
-            if (e.target.tagName === 'A' && sidebar.className.indexOf(a) >= 0) {
+            if ((e.target.tagName === 'A' || e.target.parentNode.tagName === 'A') &&
+                sidebar.className.indexOf(a) >= 0) {
                 toggle(e);
             }
         }
