@@ -7,12 +7,13 @@ function sideBar(o) {
         a             = 'active';
 
     sidebarBtn.onclick = function (e) {
-        toggle(e);
+        e.preventDefault();
+        toggle();
     };
 
-    contentLocker.onclick = function(e) {
+    contentLocker.onclick = function() {
         if (sidebar.className.indexOf(a) >= 0) {
-            toggle(e);
+            toggle();
         }
     };
 
@@ -37,13 +38,12 @@ function sideBar(o) {
             // close sidebar by click to any within tag [A]
             if ((e.target.tagName === 'A' || e.target.parentNode.tagName === 'A') &&
                 sidebar.className.indexOf(a) >= 0) {
-                toggle(e);
+                toggle();
             }
         }
     };
 
-    function toggle(e) {
-        e.preventDefault();
+    function toggle() {
         toggleClass(contentLocker);
         toggleClass(sidebar);
         toggleClass(sidebarBtn);

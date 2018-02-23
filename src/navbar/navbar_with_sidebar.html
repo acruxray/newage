@@ -12,7 +12,7 @@
 		<link href="../helpers/helpers.css" rel="stylesheet">
 		<link href="../lists/lists.css" rel="stylesheet">
 		<link href="../footer/footer.css" rel="stylesheet">
-		<link href="sidebar.css" rel="stylesheet">
+		<link href="../sidebar/sidebar.css" rel="stylesheet">
 	  	<style>
 
 		.sidebar-sublist
@@ -32,7 +32,7 @@
 	</head>
 	<body class="grey lighten-3">
 
-    <nav id="sidebar" class="sidebar shadow">
+    <nav id="sidebar" class="sidebar">
 		<div class="navbar-wrapper">
 			<div class="navbar grey lighten-3 no-shadow large">
 				<a href="#" class="img">
@@ -46,43 +46,42 @@
 		</div>
         <h5 class="sidebar-header">Header</h5>
     	<ul class="sidebar-list sidebar-main grey-text text-darken-4">
-			<li><a href="#Layout">Layout</a></li>
+			<li><a href="#">Layout</a></li>
 			<li>
-				<a href="#Typography"><i class="material-icons">format_color_text</i>Typography</a>
+				<a href="#"><i class="material-icons">format_color_text</i>Typography</a>
 			</li>
 			<li>
 				<a href="#"><i class="material-icons">account_balance</i>Tables</a>
 				<ul class="sidebar-list sidebar-sublist">
-					<li><a href="#Simple_Tables"><i class="material-icons">view_stream</i>Simple Tables</a></li>
-					<li><a href="#Stripped_Tables"><i class="material-icons">dashboard</i>Stripped Tables</a></li>
-					<li><a href="#>Highlight_Tables">Highlight Tables</a></li>
+					<li><a href="#"><i class="material-icons">view_stream</i>Simple Tables</a></li>
+					<li><a href="#"><i class="material-icons">dashboard</i>Stripped Tables</a></li>
+					<li><a href="#">Highlight Tables</a></li>
 				</ul>
 			</li>
 			<li>
-				<a href="#Helpers"><i class="material-icons">security</i>Helpers</a>
+				<a href="#"><i class="material-icons">security</i>Helpers</a>
 			</li>
     	    <li>
-				<a href="#Helpers">Helpers</a>
+				<a href="#">Helpers</a>
 				<ul class="sidebar-list sidebar-sublist">
-					<li><a href="#Typography_Helpers">Typography Helpers</a></li>
-					<li><a href="#Layout_Helpers">Layout Helpers</a></li>
-					<li><a href="#Block_Helpers">Block Helpers</a></li>
+					<li><a href="#">Typography Helpers</a></li>
+					<li><a href="#">Layout Helpers</a></li>
+					<li><a href="#">Block Helpers</a></li>
 				</ul>
 			</li>
-        	<li><a href="#Color">Colors</a></li>
+        	<li><a href="#">Colors</a></li>
         	<li>
-				<a href="#Lists">Lists</a>
+				<a href="#">Lists</a>
 				<ul class="sidebar-list sidebar-sublist">
-					<li><a href="#Simple_lists"><i class="material-icons">format_list_bulleted</i>Simple lists</a></li>
-					<li><a href="#Rich_lists"><i class="material-icons">view_list</i>Rich lists</a></li>
-					<li><a href="#Numbered_lists"><i class="material-icons">format_list_numbered</i>Numbered lists</a></li>
+					<li><a href="#"><i class="material-icons">format_list_bulleted</i>Simple lists</a></li>
+					<li><a href="#"><i class="material-icons">view_list</i>Rich lists</a></li>
+					<li><a href="#"><i class="material-icons">format_list_numbered</i>Numbered lists</a></li>
 				</ul>
 			</li>
         	<li><a href="#">Buttons</a></li>
         	<li><a href="#">Footer</a></li>
         </ul>
 		<div class="sidebar-footer">
-			<span><a href="#Footer_link">Footer link</a></span><br>
 			2017 &copy; NewAge
 		</div>
     </nav>
@@ -90,7 +89,7 @@
 	<div id="contentLocker" class="content-locker"></div>
 
 	<header class="sidebar-push">
-		<nav class="navbar-wrapper">
+		<nav class="navbar-wrapper navbar-fixed">
 			<div class="navbar black sidebar-push">
 
 
@@ -115,6 +114,18 @@
 					<a href="#"><i class="material-icons">android</i></a>
 				</div>
 			</div>
+
+			<div class="navbar sidebar-push">
+				<form>
+					<span class="icon">
+						<i class="material-icons">search</i>
+					</span>
+					<input class="navbar-search" type="text" placeholder="Search">
+					<span class="icon">
+						<i class="material-icons">close</i>
+					</span>
+				</form>
+			</div>
 		</nav>
 	</header>
 
@@ -138,7 +149,7 @@
         </div>
 	</footer>
 
-    <script src="sidebar.js"></script>
+    <script src="../sidebar/sidebar.js"></script>
 	<script>
 		sideBar({
 			sideBar: 'sidebar',
