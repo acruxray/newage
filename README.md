@@ -19,3 +19,7 @@ And, if you intend to use the *sidebar*, add to `body` block before `</body>` ta
 ```html
 <script src="https://cdn.jsdelivr.net/gh/acruxray/newage@0.6.0/dist/js/newage.min.js"></script>
 ```
+
+## License
+
+MIT
