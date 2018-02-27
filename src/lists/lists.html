@@ -8,6 +8,9 @@
 	<link href="../cards/cards.css" rel="stylesheet">
 	<link href="../helpers/helpers.css" rel="stylesheet">
 	<link href="lists.css" rel="stylesheet">
+
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
   <style>
 
   html {
@@ -22,6 +25,12 @@
   .list img
   {
       border-radius: 50%;
+  }
+
+  pre {
+      display: block;
+      width: inherit;
+      overflow: auto;
   }
 
   </style>
@@ -93,21 +102,30 @@
                     <img src="http://via.placeholder.com/64x64" alt="User icon">
                 </li>
 
-                <li>
+                <li class="composite">
                     <span class="img">
                         <img src="http://via.placeholder.com/64x64" alt="User icon">
                     </span>
 
                     <span class="text">
                         John Dou
-                    </span>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<p>
+							Test div
+						</p>
+						<pre><code class="lang-JavaScript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getArrayFromJSON</span>(<span class="hljs-params">data</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'</span>);
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">JSON</span>.parse(data);
+}
+</code></pre>
+					</span>
 
                     <span class="icon">
                         <i class="material-icons">star</i>
                     </span>
                 </li>
 
-				<li>
+				<li class="composite">
                     <span class="img">
                         <img src="http://via.placeholder.com/64x64" alt="User icon">
                     </span>

@@ -23,11 +23,15 @@
 
 .composite .img
 {
+    overflow: hidden;
+
     padding: 1rem;
 }
 
 .composite .text
 {
+    overflow: hidden;
+
     width: 100%;
     padding: 1rem;
 }
@@ -35,6 +39,8 @@
 .composite .icon
 {
     line-height: 1rem;
+
+    overflow: hidden;
 
     padding: 1rem;
 }
