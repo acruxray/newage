@@ -45,3 +45,16 @@
 
     color: inherit;
 }
+
+.list .block
+{
+    padding: 0;
+}
+
+.list .block a
+{
+    display: block;
+
+    width: 100%;
+    padding: 1rem;
+}
