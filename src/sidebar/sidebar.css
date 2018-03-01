@@ -13,6 +13,13 @@
 
     color: #000;
     background: #fff;
+
+    /* transition: left .5s; */
+}
+
+.sidebar-dyn
+{
+    transition: left .5s;
 }
 
 .sidebar .navbar-wrapper
@@ -151,12 +158,33 @@
 }
 
 
+.sidebar-push-dyn
+{
+    transition: padding-left .5s;
+}
+
+/* PRO section START */
 .sidebar-hidden
 {
     left: -16rem;
 
-    transition: left .5s;
+    /* transition: left .5s; */
 }
+
+
+.sidebar-push-hidden
+{
+    padding-left: 0;
+
+    /* transition: padding-left .5s; */
+}
+
+
+.sidebar-btn-view
+{
+    display: block;
+}
+/* PRO section END */
 
 
 .sidebar.active
