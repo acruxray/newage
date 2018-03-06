@@ -16,6 +16,11 @@
     border-bottom: 1px solid #ddd;
 }
 
+.list.noborder > li
+{
+    border-bottom: 0;
+}
+
 .list .composite
 {
     padding: 0;
@@ -59,8 +64,29 @@
 
 .list .block a
 {
+    line-height: 1rem;
+
     display: block;
 
     width: 100%;
     padding: 1rem;
+}
+
+.list .narrow
+{
+    min-height: 2rem !important;
+}
+
+.list .narrow a
+{
+    box-sizing: border-box;
+    min-height: 2rem !important;
+    padding: .5rem 1rem !important;
+}
+
+.list .active a
+{
+    padding-left: calc(1rem - 3px) !important;
+
+    border-left: 3px solid #fa0;
 }
