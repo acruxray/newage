@@ -21,6 +21,11 @@
 		.notification.active {
 			left: 2rem;
 		}*/
+
+		.test {
+			background: #0277bd;
+			color: #eee;
+		}
 		</style>
 	</head>
 	<body class="grey lighten-3">
@@ -32,6 +37,9 @@
 			</p>
 			<p>
 				<a href="#" class="btn large" onClick="notification('I am notification with 10 seconds lifetime!', 10000)">Call longtime notification</a>
+			</p>
+			<p>
+				<a href="#" class="btn large" onClick="notification('I am notification with custom css class!', null, 'test')">Call notification with custom css class</a>
 			</p>
 		</div>
 	</main>

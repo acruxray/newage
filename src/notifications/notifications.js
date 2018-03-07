@@ -1,10 +1,11 @@
-function notification(text, lifetime) {
+function notification(text, lifetime, className) {
 
-    lifetime = typeof lifetime  === 'undefined' ? 3000 : lifetime;
+    lifetime   = (typeof lifetime === 'undefined' || lifetime === null) ? 3000 : lifetime;
+    className = (typeof className === 'undefined' || className === null) ? '' : className;
 
     var e = document.createElement('div'),
         timeout = lifetime + 1000;
-    e.className = 'notification';
+    e.className = 'notification ' + className;
     e.innerHTML = text;
 
     document.body.appendChild(e);
