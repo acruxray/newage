@@ -7,7 +7,13 @@ function sideBar(o) {
         a             = 'active',
         pro           = o.pro ? o.pro : false,
         state         = o.state ? o.state : false,
-        body          = document.querySelector('body').classList;
+        body          = document.querySelector('body').classList,
+        nf            = document.querySelector('.navbar-fixed');
+
+    // var nf = document.querySelector('.navbar-fixed');
+    // if (nf) {
+    //     nf.classList.add('body-push-dyn');
+    // }
 
     if (pro) {
         sidebarBtn.classList.add('sidebar-btn-view');
@@ -18,9 +24,16 @@ function sideBar(o) {
             sidebar.classList.add('sidebar-dyn');
             body.add('body-push');
             body.add('body-push-dyn');
+            if (nf) {
+                nf.classList.add('body-push');
+                nf.classList.add('body-push-dyn');
+            }
         }
     } else {
         body.add('body-push');
+        if (nf) {
+            nf.classList.add('body-push');
+        }
     }
 
     sidebarBtn.onclick = function (e) {
@@ -88,12 +101,20 @@ function sideBar(o) {
 
             body.add('body-push-hidden');
             body.add('body-push-dyn');
+            if (nf) {
+                nf.classList.add('body-push-hidden');
+                nf.classList.add('body-push-dyn');
+            }
         } else {
             sidebar.classList.remove('sidebar-hidden');
             sidebar.classList.add('sidebar-dyn');
 
             body.remove('body-push-hidden');
             body.add('body-push');
+            if (nf) {
+                nf.classList.remove('body-push-hidden');
+                nf.classList.add('body-push');
+            }
         }
 
         sC = true;
