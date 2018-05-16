@@ -1,5 +1,5 @@
 /*
- * Newage v0.12.1 (https://acruxray.github.io/newage)
+ * Newage v0.13.0 (https://acruxray.github.io/newage)
  * Copyright 2018 Newage
  * MIT License (https://raw.githubusercontent.com/acruxray/newage/master/LICENSE)
  */
@@ -2888,6 +2888,21 @@ a.disabled
     color: #ccc;
 }
 
+.fixed
+{
+    position: fixed;
+}
+
+hr
+{
+    display: block;
+
+    height: 1px;
+
+    border: 0;
+    background: #eee;
+}
+
 .row
 {
     display: flex;
@@ -2968,9 +2983,6 @@ a.disabled
 {
     width: 100%;
 }
-
-
-
 
 @media (min-width: 601px)
 {
@@ -3482,14 +3494,41 @@ a.disabled
     height: 3.75rem;
 }
 
-.shadow
+/* .shadow
+{
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.3);
+} */
+
+.no-shadow,
+.shadow-0
+{
+    box-shadow: 0 0 0 0;
+}
+
+.shadow-1
+{
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12), 0 1px 5px 0 rgba(0,0,0,.2);
+}
+
+.shadow,
+.shadow-2
 {
     box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.3);
 }
 
-.no-shadow
+.shadow-3
 {
-    box-shadow: 0 0 0 0;
+    box-shadow: 0 8px 17px 2px rgba(0,0,0,.14), 0 3px 14px 2px rgba(0,0,0,.12), 0 5px 5px -3px rgba(0,0,0,.2);
+}
+
+.shadow-4
+{
+    box-shadow: 0 16px 24px 2px rgba(0,0,0,.14), 0 6px 30px 5px rgba(0,0,0,.12), 0 8px 10px -7px rgba(0,0,0,.2);
+}
+
+.shadow-5
+{
+    box-shadow: 0 24px 38px 3px rgba(0,0,0,.14), 0 9px 46px 8px rgba(0,0,0,.12), 0 11px 15px -7px rgba(0,0,0,.2);
 }
 
 .navbar form
@@ -3572,6 +3611,8 @@ textarea.navbar-search
 .notification.active
 {
     right: 2rem;
+
+    margin-left: 2rem;
 }
 
 .sidebar
@@ -3753,6 +3794,212 @@ textarea.navbar-search
     padding-left: 0;
 
     /* transition: padding-left .5s; */
+}
+
+
+.sidebar-btn-view
+{
+    display: block;
+}
+/* PRO section END */
+
+
+.sidebar.active
+{
+    left: 0;
+
+    width: 16rem;
+}
+
+.content-locker
+{
+    display: none;
+}
+
+.content-locker.active
+{
+    position: fixed;
+    z-index: 90;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0,.6);
+}
+
+.sidebar
+{
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    overflow-y: auto;
+    flex-direction: column;
+
+    height: 100%;
+
+    color: #000;
+    background: #fff;
+}
+
+.sidebar-dyn
+{
+    transition: left .5s;
+}
+
+.sidebar .navbar-wrapper
+{
+    position: relative;
+}
+
+.sidebar-header
+{
+    padding: 0 1.3rem;
+}
+
+.sidebar-main
+{
+    flex: 1 0 auto;
+}
+
+.sidebar-main i
+{
+    margin-right: 1.3rem;
+}
+
+.sidebar-list
+{
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.sidebar-list i
+{
+    font-size: 1.275rem; /* test */
+}
+
+.sidebar-list a
+{
+    font-size: .85rem; /* test (1rem) */
+    font-weight: 500; /* test (normal)*/
+
+    display: flex;
+
+    box-sizing: border-box;
+    min-height: 2.75rem; /* test (2rem) */
+    padding: .882rem 1.3rem; /* test (.5rem 1.3rem) */
+
+    color: inherit;
+}
+
+.sidebar-list a i
+{
+    color: rgba(0,0,0,.5);
+}
+
+.sidebar-list a:hover
+{
+    transition: background .25s ease;
+
+    color: inherit;
+    background: rgba(0,0,0,.05);
+}
+
+.sidebar-sublist
+{
+    display: none;
+}
+
+.sidebar-sublist.active
+{
+    display: block;
+}
+
+.sidebar-sublist a
+{
+    font-weight: 400;
+
+    padding-left: 2.6rem;
+}
+
+
+.sidebar-footer
+{
+    font-size: .85rem;
+
+    box-sizing: border-box;
+    padding: 1rem 1.3rem;
+}
+
+.sidebar-btn
+{
+    background: inherit;
+}
+
+@media (max-width: 600px)
+{
+    .sidebar
+    {
+        left: -16rem;
+
+        visibility: hidden;
+
+        transition: left .5s;
+    }
+
+    .sidebar.visible
+    {
+        visibility: visible;
+    }
+}
+
+@media (min-width: 601px)
+{
+    .sidebar-btn
+    {
+        display: none;
+    }
+}
+
+/* @media (min-width: 993px) */
+@media (min-width: 601px)
+{
+    .body-push
+    {
+        position: absolute;
+        left: 16rem;
+    }
+
+    .sidebar
+    {
+        width: 16rem;
+    }
+}
+
+
+.body-push-dyn
+{
+    transition: left .5s;
+}
+
+/* PRO section START */
+.sidebar-hidden
+{
+    left: -16rem;
+}
+
+
+.body-push-hidden
+{
+    left: 0;
 }
 
 

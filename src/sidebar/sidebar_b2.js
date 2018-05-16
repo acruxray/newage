@@ -6,8 +6,7 @@ function sideBar(o) {
         sublist       = 'sidebar-sublist',
         a             = 'active',
         pro           = o.pro ? o.pro : false,
-        state         = o.state ? o.state : false,
-        body          = document.querySelector('body').classList;
+        state         = o.state ? o.state : false;
 
     if (pro) {
         sidebarBtn.classList.add('sidebar-btn-view');
@@ -16,11 +15,11 @@ function sideBar(o) {
             toogleClassPro();
         } else {
             sidebar.classList.add('sidebar-dyn');
-            body.add('body-push');
-            body.add('body-push-dyn');
+            var el = document.getElementsByClassName('sidebar-push');
+            for (var i = 0, l = el.length; i < l; i++) {
+                el[i].classList.add('sidebar-push-dyn');
+            }
         }
-    } else {
-        body.add('body-push');
     }
 
     sidebarBtn.onclick = function (e) {
@@ -61,10 +60,9 @@ function sideBar(o) {
     };
 
     function toggle() {
-        if (pro && window.innerWidth > 600) {
+        if (pro && document.body.clientWidth > 600) {
             toogleClassPro();
         } else {
-            sidebar.classList.add('visible');
             toggleClass(contentLocker);
             toggleClass(sidebar);
             toggleClass(sidebarBtn);
@@ -86,14 +84,21 @@ function sideBar(o) {
                 sidebar.classList.add('sidebar-dyn');
             }
 
-            body.add('body-push-hidden');
-            body.add('body-push-dyn');
+            var el = document.getElementsByClassName('sidebar-push');
+            for (var i = 0, l = el.length; i < l; i++) {
+                el[i].classList.add('sidebar-push-hidden');
+                if (sC) {
+                    el[i].classList.add('sidebar-push-dyn');
+                }
+            }
         } else {
             sidebar.classList.remove('sidebar-hidden');
             sidebar.classList.add('sidebar-dyn');
-
-            body.remove('body-push-hidden');
-            body.add('body-push');
+            var el = document.getElementsByClassName('sidebar-push');
+            for (var i = 0, l = el.length; i < l; i++) {
+                el[i].classList.remove('sidebar-push-hidden');
+                el[i].classList.add('sidebar-push-dyn');
+            }
         }
 
         sC = true;

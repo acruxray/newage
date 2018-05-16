@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title></title>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href="../navbar/navbar.css" rel="stylesheet">
+		<link href="../layout/layout.css" rel="stylesheet">
+		<link href="../colors/colors.css" rel="stylesheet">
+		<link href="../typography/typography.css" rel="stylesheet">
+		<link href="../helpers/helpers.css" rel="stylesheet">
+		<link href="../lists/lists.css" rel="stylesheet">
+		<link href="../footer/footer.css" rel="stylesheet">
+		<link href="sidebar.css" rel="stylesheet">
+	  	<style>
+
+		.sidebar-sublist
+		{
+			display: block;
+		    transition: max-height 0.5s ease;
+		    overflow:hidden;
+		    max-height: 0;
+		}
+
+		.sidebar-sublist.active
+		{
+		    max-height: 20rem;
+		}
+
+		</style>
+	</head>
+	<body class="grey lighten-3">
+
+    <nav id="sidebar" class="sidebar shadow">
+		<div class="navbar-wrapper">
+			<div class="navbar grey lighten-3 no-shadow large">
+				<a href="#" class="img">
+					<img src="../../docs/img/newage_logo_256x256.png" alt="NewAge">
+				</a>
+
+				<a href="#" class="logo grey-text text-darken-4">
+					<h1 class="logo-title">NewAge</h1>
+				</a>
+			</div>
+		</div>
+        <h5 class="sidebar-header">Header</h5>
+    	<ul class="sidebar-list sidebar-main grey-text text-darken-4">
+			<li><a href="#Layout">Layout</a></li>
+			<li>
+				<a href="#Typography"><i class="material-icons">format_color_text</i>Typography</a>
+			</li>
+			<li>
+				<a href="#"><i class="material-icons">account_balance</i>Tables</a>
+				<ul class="sidebar-list sidebar-sublist">
+					<li><a href="#Simple_Tables"><i class="material-icons">view_stream</i>Simple Tables</a></li>
+					<li><a href="#Stripped_Tables"><i class="material-icons">dashboard</i>Stripped Tables</a></li>
+					<li><a href="#>Highlight_Tables">Highlight Tables</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#Helpers"><i class="material-icons">security</i>Helpers</a>
+			</li>
+    	    <li>
+				<a href="#Helpers">Helpers</a>
+				<ul class="sidebar-list sidebar-sublist">
+					<li><a href="#Typography_Helpers">Typography Helpers</a></li>
+					<li><a href="#Layout_Helpers">Layout Helpers</a></li>
+					<li><a href="#Block_Helpers">Block Helpers</a></li>
+				</ul>
+			</li>
+        	<li><a href="#Color">Colors</a></li>
+        	<li>
+				<a href="#Lists">Lists</a>
+				<ul class="sidebar-list sidebar-sublist">
+					<li><a href="#Simple_lists"><i class="material-icons">format_list_bulleted</i>Simple lists</a></li>
+					<li><a href="#Rich_lists"><i class="material-icons">view_list</i>Rich lists</a></li>
+					<li><a href="#Numbered_lists"><i class="material-icons">format_list_numbered</i>Numbered lists</a></li>
+				</ul>
+			</li>
+        	<li><a href="#">Buttons</a></li>
+        	<li><a href="#">Footer</a></li>
+        </ul>
+		<div class="sidebar-footer">
+			<span><a href="#Footer_link">Footer link</a></span><br>
+			2017 &copy; NewAge
+		</div>
+    </nav>
+
+	<div id="contentLocker" class="content-locker"></div>
+
+	<header class="">
+		<nav class="navbar-wrapper">
+			<div class="navbar black">
+
+
+				<div id="sidebarBtn" class="sidebar-btn">
+					<a href="#">
+				    	<i class="material-icons">menu</i>
+				    </a>
+				</div>
+
+				<a href="#" class="img">
+					<img src="../../docs/img/newage_logo_256x256.png" alt="Logo Title">
+				</a>
+
+				<a href="#" class="logo">
+					<h1 class="logo-title">Normal Navbar</h1>
+				</a>
+
+				<div class="links hide-s">
+					<a href="#">First</a>
+					<a href="#">Second</a>
+					<a href="#">Third</a>
+					<a href="#"><i class="material-icons">android</i></a>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+
+	<main class="container-vertical large">
+		<div class="container">
+			<h3>Head</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<h4>Subhead</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</main>
+
+    <footer class="i-sidebar-push blue-grey grey-text text-lighten-3">
+		<div class="container light" style="padding: 1rem 0;">
+            <h5>Footer text</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+	</footer>
+
+    <script src="sidebar.js"></script>
+	<script>
+		sideBar({
+			pro: true, // handle switch sidebar state for client size > 600px (default is false)
+			state: false, // sidebar switch - false (default): closen, true: open
+			sideBar: 'sidebar', // id selector of sidebar element
+			collapseButton: 'sidebarBtn', // id selector of switch button for sidebar state
+			contentLocker: 'contentLocker' // id selector of content locker for client size < 600px
+		});
+	</script>
+</body>
+</html>

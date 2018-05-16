@@ -125,3 +125,18 @@ a.disabled
 
     color: #ccc;
 }
+
+.fixed
+{
+    position: fixed;
+}
+
+hr
+{
+    display: block;
+
+    height: 1px;
+
+    border: 0;
+    background: #eee;
+}
