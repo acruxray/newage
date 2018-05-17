@@ -156,7 +156,7 @@
 
 .body-push-dyn
 {
-    transition: left .5s;
+    transition: all .5s;
 }
 
 /* PRO section START */
