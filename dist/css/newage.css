@@ -1,5 +1,5 @@
 /*
- * Newage v0.13.1 (https://acruxray.github.io/newage)
+ * Newage v0.13.2 (https://acruxray.github.io/newage)
  * Copyright 2018 Newage
  * MIT License (https://raw.githubusercontent.com/acruxray/newage/master/LICENSE)
  */
@@ -33,6 +33,7 @@
     line-height: 2.75rem;
 }
 
+.btn,
 .btn.medium
 {
     font-size: 1rem;

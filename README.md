@@ -4,7 +4,7 @@ A minimalistic CSS framework in the style of material design.
 
 ## Versions
 
-* Current: v0.13.1
+* Current: v0.13.2
 * Latest stable: v0.13.0
 
 ## Install
