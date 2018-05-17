@@ -1,5 +1,5 @@
 /*
- * Newage v0.13.2 (https://acruxray.github.io/newage)
+ * Newage v0.13.3 (https://acruxray.github.io/newage)
  * Copyright 2018 Newage
  * MIT License (https://raw.githubusercontent.com/acruxray/newage/master/LICENSE)
  */
@@ -3986,6 +3986,8 @@ textarea.navbar-search
     {
         position: absolute;
         left: 16rem;
+
+        width: calc(100% - 16rem);
     }
 
     .sidebar
@@ -4010,6 +4012,8 @@ textarea.navbar-search
 .body-push-hidden
 {
     left: 0;
+
+    width: 100%;
 }
 
 

@@ -143,6 +143,8 @@
     {
         position: absolute;
         left: 16rem;
+
+        width: calc(100% - 16rem);
     }
 
     .sidebar
@@ -167,6 +169,8 @@
 .body-push-hidden
 {
     left: 0;
+
+    width: 100%;
 }
 
 
